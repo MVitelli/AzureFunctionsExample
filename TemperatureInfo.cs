@@ -2,7 +2,7 @@
 
 namespace Azure_Functions
 {
-    public class Main
+    public class TemperatureInfo
     {
         [JsonProperty(PropertyName = "temp")]
         public double CurrentTemperature { get; set; }

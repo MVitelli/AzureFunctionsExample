@@ -61,8 +61,10 @@ namespace Azure_Functions
                 responseString = responseContent.ReadAsStringAsync().Result;
             }
 
-            return JsonConvert.DeserializeObject<WeatherDTO>(responseString,
+            var weatherInKelvin = JsonConvert.DeserializeObject<WeatherDTO>(responseString,
                 new JsonSerializerSettings { MissingMemberHandling = MissingMemberHandling.Ignore});
+
+            return WeatherConverter.ConvertToCelsius(weatherInKelvin);
         }
     }
 

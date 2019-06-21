@@ -7,6 +7,6 @@ namespace Azure_Functions
         [JsonProperty( PropertyName = "name")]
         public string CityName { get; set; }
         [JsonProperty(PropertyName = "main")]
-        public Main Temperature { get; set; }
+        public TemperatureInfo Temperature { get; set; }
     }
 }
