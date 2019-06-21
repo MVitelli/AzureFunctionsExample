@@ -2,7 +2,8 @@
 
 This is an Azure Functions Example using Docker. 
 
-It is a weather API that retrieves temperature info of the City Id received in the URL. I use an APIKEY provided by OpenWeather.
+It is a weather API that retrieves temperature info of the City Id received in the URL. By default, it will return Buenos Aires weather.
+I use an APIKEY provided by OpenWeather.
 
 To find the id of the desired city, check city.list.json.
 
